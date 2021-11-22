@@ -1,10 +1,7 @@
 //这里修改webpack配置
-
+const path = require('path')
 module.exports = {
-  devServer: {
-    open: true,
-    host: 'localhost',
-    port: 8080,
-    https: false,
+  chainWebpack: (config) => {
+    config.resolve.alias.set('@', path.resolve(__dirname, 'src'))
   },
 }
