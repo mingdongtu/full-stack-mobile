@@ -1,11 +1,13 @@
 <template>
   <div>
-    <van-row>
+    <van-row class="search">
       <van-col span="16">
         <van-search placeholder="请输入搜索关键词" />
       </van-col>
-      <van-col span="4">span: 8</van-col>
-      <van-col span="4">span: 8</van-col>
+      <van-col span="4"
+        ><img src="@/assets/icons/service.png" alt=""
+      /></van-col>
+      <van-col span="4"><img src="@/assets/icons/bell.png" alt="" /></van-col>
     </van-row>
   </div>
 </template>
@@ -30,4 +32,9 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.search img {
+  width: 24px;
+  height: 24px;
+}
+</style>
