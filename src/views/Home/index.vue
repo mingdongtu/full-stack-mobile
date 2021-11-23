@@ -32,7 +32,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .search img {
   width: 24px;
   height: 24px;
